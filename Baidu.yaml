@@ -1,0 +1,9 @@
+h: &h {headers: {Host: 153.3.236.22, X-T5-Auth: 683556433}}
+
+b: &b {type: http, port: 443, <<: *h }
+
+proxies:
+  - {name: 苏州联通, server: 157.0.148.53, <<: *b}
+  - {name: 南京联通, server: 153.3.237.117, <<: *b}
+  - {name: 保定联通1, server: 110.242.70.68, <<: *b}
+  - {name: 保定联通2, server: 110.242.70.69, <<: *b}
